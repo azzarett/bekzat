@@ -29,7 +29,7 @@
 }
 
 .nameContainer {
-  font-family: "Great Vibes", cursive;
+  font-family: "myFont";
   font-style: italic;
   position: relative;
   display: flex;

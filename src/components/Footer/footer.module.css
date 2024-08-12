@@ -28,12 +28,12 @@
   flex-direction: column;
   text-align: center;
   text-transform: none;
-  font-family: "Great Vibes", cursive;
+  font-family: "myFont";
   font-style: italic;
 }
 
 .text {
-  font-size: 38px;
+  font-size: 32px;
   color: whitesmoke;
   margin: 0px;
 }
