@@ -1,4 +1,9 @@
-@import '../public/font/fonts.css';
+@font-face {
+  font-family: 'KZ font';
+  src: url('/font/KZ_ceremonious-one.woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 body,
 html {
@@ -6,7 +11,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Comfortaa", sans-serif, "myFont", cursive;  
+  font-family: "Comfortaa", sans-serif, 'KZ font';
   font-optical-sizing: auto;
   background-color: #f5f9ff;
   margin: 0;

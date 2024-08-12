@@ -57,14 +57,13 @@
 }
 
 .name {
-  font-family: "myFont";
-  font-style: italic;
+  font-family: "kz font";
   position: absolute;
   top: 57%;
   left: 48%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-size: 35px;
+  font-size: 40px;
   word-spacing: 5px;
   text-align: center;
 }

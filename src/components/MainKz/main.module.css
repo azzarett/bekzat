@@ -29,8 +29,7 @@
 }
 
 .nameContainer {
-  font-family: "myFont";
-  font-style: italic;
+  font-family: "Kz font";
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,7 +53,7 @@
 }
 
 .name {
-  font-size: 40px;
+  font-size: 45px;
   margin: 8px;
 }
 

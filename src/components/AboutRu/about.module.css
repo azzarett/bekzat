@@ -39,8 +39,7 @@
 }
 
 .dateContainer {
-  font-family: "myFont";
-  font-style: italic;
+  font-family: "Kz font";
   position: relative;
   display: flex;
   flex-direction: column;
@@ -51,12 +50,12 @@
 }
 
 .date {
-  font-size: 32px;
+  font-size: 40px;
   margin: 8px;
 }
 
 .time {
-  font-size: 32px;
+  font-size: 40px;
   margin: 8px;
 }
 

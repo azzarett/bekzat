@@ -28,12 +28,11 @@
   flex-direction: column;
   text-align: center;
   text-transform: none;
-  font-family: "myFont";
-  font-style: italic;
+  font-family: "Kz font";
 }
 
 .text {
-  font-size: 32px;
+  font-size: 44px;
   color: whitesmoke;
   margin: 0px;
 }
