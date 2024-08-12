@@ -5,6 +5,7 @@ import axios from "axios";
 export const FormKz = () => {
   const [name, setName] = useState("");
   const [option, setOption] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -12,6 +13,7 @@ export const FormKz = () => {
       Name: name,
       Option: option,
     };
+    setLoading(true);
     axios
       .post(
         "https://sheet.best/api/sheets/dd34df7a-cd34-46d8-a8db-420821cfe093",
@@ -20,6 +22,12 @@ export const FormKz = () => {
       .then(() => {
         setName("");
         setOption("");
+        setLoading(false);
+        alert("Ваше сообщение успешно отправлено!");
+      })
+      .catch(() => {
+        setLoading(false);
+        alert("Произошла ошибка. Пожалуйста, попробуйте снова.");
       });
   };
 
@@ -54,6 +62,7 @@ export const FormKz = () => {
             <input
               type="radio"
               name="option"
+              required
               value="Конечно, приду"
               onChange={(e) => setOption(e.target.value)}
             />
@@ -64,6 +73,7 @@ export const FormKz = () => {
             <input
               type="radio"
               name="option"
+              required
               value="Мы придём с супругом/супругой"
               onChange={(e) => setOption(e.target.value)}
             />
@@ -74,14 +84,19 @@ export const FormKz = () => {
             <input
               type="radio"
               name="option"
+              required
               value="К сожалению, не смогу прийти"
               onChange={(e) => setOption(e.target.value)}
             />
             өкінішке орай, келе алмаймын
           </label>
         </div>
-        <button className={styles.button}>
-          <p className={styles.text}>Жіберу</p>
+        <button type="submit" className={styles.button} disabled={loading}>
+          {loading ? (
+            <div className={styles.loader}></div>
+          ) : (
+            <p className={styles.text}>Жіберу</p>
+          )}
         </button>
       </form>
     </div>
