@@ -10,7 +10,7 @@ function App() {
         <Route path="/ru" element={<Layout />} >
           <Route index element={<WebRu />}/>
         </Route>
-        <Route path="/kz" element={<Layout />} >
+        <Route path="/" element={<Layout />} >
           <Route index element={<WebKz />}/>
         </Route>
       </Routes>
