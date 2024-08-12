@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flowersContainer {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.flower1 {
+  max-width: 100vw;
+  width: 300px;
+  position: absolute;
+  top: -120px;
+  left: 10px;
+  transform: translateX(-50%);
+}
+
+.flower2 {
+  max-width: 100vw;
+  width: 280px;
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flower3 {
+  max-width: 100vw;
+  width: 300px;
+  position: absolute;
+  top: -120px;
+  left: 90%;
+  transform: translateX(-50%);
+}
+
+.headerImage {
+  width: 100%;
+}
+
+.nameContainer {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nameImage {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.name {
+  font-family: "Great Vibes", cursive;
+  font-style: italic;
+  position: absolute;
+  top: 57%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 35px;
+  word-spacing: 20px;
+  text-align: center;
+}
+
+.dateContainer {
+  margin-top: 10px;
+}
+
+.date {
+  font-size: 22px;
+}
