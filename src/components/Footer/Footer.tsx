@@ -19,7 +19,7 @@ export const Footer = () => {
         />
       </div>
       <div className={styles.buttonContainer}>
-        <Link onClick={scrollToTop} to="/kz" className={styles.link}>
+        <Link onClick={scrollToTop} to="/" className={styles.link}>
           Kz
         </Link>
         <p className={styles.buttonStick}>|</p>
