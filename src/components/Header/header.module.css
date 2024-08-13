@@ -19,7 +19,6 @@
   width: 300px;
   position: absolute;
   top: -120px;
-  left: 10px;
   transform: translateX(-50%);
 }
 
@@ -37,7 +36,7 @@
   width: 300px;
   position: absolute;
   top: -120px;
-  left: 90%;
+  left: -100px;
   transform: translateX(-50%);
 }
 
