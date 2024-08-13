@@ -27,9 +27,12 @@ export const AboutKz = () => {
         <p className={styles.text2}>төмендегі картаны </p>
         <p className={styles.text2}>қолдануыңызды сұраймыз:</p>
       </div>
-      <button className={styles.gis}>
-        <a className={styles.text} href="https://2gis.kz/kyzylorda/geo/70000001063257302">2GIS</a>
-      </button>
+
+      <a href="https://2gis.kz/kyzylorda/geo/70000001063257302">
+        <button className={styles.gis}>
+          <p className={styles.text}>2GIS</p>
+        </button>
+      </a>
     </div>
   );
 };
