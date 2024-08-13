@@ -11,10 +11,9 @@ export const MainRu = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.textContainer} data-aos="fade-down">
-        <p className={styles.text}>дорогие гости,</p>
+        <p className={styles.text}>дорогие родственники,</p>
         <p className={styles.text}>братья и сестры,</p>
-        <p className={styles.text}>родственники, друзья </p>
-        <p className={styles.text}>и коллеги!</p>
+        <p className={styles.text}>друзья и коллеги!</p>
       </div>
       <div className={styles.textContainer2} data-aos="fade-down">
         <p className={styles.text}>Приглашаем Вас быть</p>
@@ -26,7 +25,7 @@ export const MainRu = () => {
         </span>
       </div>
       <div className={styles.textContainer2} data-aos="fade-down">
-        <p className={styles.text}>виновники торжества: </p>
+        <p className={styles.text}>Торжество от имени: </p>
         <span className={styles.nameContainer}>
           <p className={styles.name}>Қайрат - Виктория</p>
         </span>
