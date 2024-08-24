@@ -29,8 +29,9 @@
 
 .text1 {
   font-size: 18px;
+  font-weight: 600;
   margin: 8px;
-  color: lawngreen;
+  color: rgb(2, 138, 20);
 }
 
 .text2 {

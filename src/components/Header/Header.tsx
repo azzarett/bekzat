@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -16,12 +16,12 @@ export const Header = () => {
 
   const togglePlayPause = () => {
     if (audioRef.current) {
-      if (!isPlaying) {
+      if (isPlaying) {
         audioRef.current.pause();
       } else {
         audioRef.current.play().catch(() => {});
       }
-      setIsPlaying(isPlaying);
+      setIsPlaying(!isPlaying);
     }
   };
 
