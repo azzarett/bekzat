@@ -27,7 +27,7 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <audio ref={audioRef} src="/sounds/song.mp3" loop />
+      <audio ref={audioRef} src="/sounds/song.mp3" autoPlay loop />
 
       <div className={styles.flowersContainer}>
         <img
