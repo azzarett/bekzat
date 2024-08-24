@@ -76,3 +76,49 @@
 .date {
   font-size: 22px;
 }
+
+.audioContainer {
+  position: absolute;
+  top: 360px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleText {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  animation: rotateText 8s linear infinite;
+}
+
+text {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.audioButton {
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+}
+
+.audioButton img,
+.audioButton svg {
+  width: 40px;
+  height: 40px;
+}
